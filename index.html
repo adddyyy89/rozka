@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="rozkaApp">
+<head>
+	<title>Personal Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+</head>
+<body ng-controller="rozkaRESTApp">
+	<div class="row">
+		<div class="col-sm-4" ng-click="helped();">Helped Someone</div>
+		<div class="col-sm-4" ng-click="selfish();">Selfish Work</div>
+		<div class="col-sm-4" ng-click="learned();">I Learned</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4" ng-click="idea();">New Idea</div>
+		<div class="col-sm-4" ng-click="day();">How was the day</div>
+		<div class="col-sm-4" ng-click="status();">Status Update</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3" ng-click="happy();">Happy</div>
+		<div class="col-sm-3" ng-click="fine();">Just Fine</div>
+		<div class="col-sm-3" ng-click="bored();">Bored</div>
+		<div class="col-sm-3" ng-click="depressed();">Depressed</div>
+	</div>
+
+	<script src="./scripts/rozka.js"></script>
+</body>
+</html>
